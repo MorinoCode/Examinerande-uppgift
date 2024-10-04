@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="minaSidor.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="minaSidor.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Mina Sidor</title>
+  </head>
+  <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li><a href="#">PLANER</a></li>
-                <li><a href="#">HISTORIK</a></li>
-                <li><a href="#">TIPS</a></li>
-                <li><a href="#">LOGGA UT</a></li>
-            </ul>
-        </nav>
-        <header>
-            <figure>
-                <img src="./assets/images/footer.jpeg" alt="Plant">
-                <h1>Mina Sidor</h1>
-            </figure>
-        </header>
-        <form>
-            <h2>Lägg till ny plantering:</h2>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#">PLANER</a></li>
+          <li><a href="#">HISTORIK</a></li>
+          <li><a href="#">TIPS</a></li>
+          <li><a href="#">LOGGA UT</a></li>
+        </ul>
+      </nav>
+
+      <header>
+        <span class="material-symbols-outlined container__menu header-menu" > menu </span>
+        <figure>
+          <img src="./assets/Logo.svg" alt="heart" />
+        </figure>
+        <h1>Mina Sidor</h1>
+      </header>
+
+      <form>
+        <h2>Lägg till ny plantering:</h2>
+        <div class="form__inputs">
+          <div class="form__inputs__planta">
             <label>Planta:</label>
-            <input type="text">
-            <label>Datum:</label>
-            <input type="text">
-            <button>LÄGG TILL</button>
-        </form>
-
-        <section class="planerade">
-            <h2>Dina planerade planteringar</h2>
-            <div class="card">
-                <figure>
-                    <img src="./assets/images/9.jpeg" alt="gurka">
-                </figure>
-                <div class="card__body">
-                    <h3>Gurka</h3>
-                    <p>15 april 2024</p>
-                    <p>Rico Coolio</p>
-                    <button>TA BORT</button>
-                </div>
-            </div>
-        </section>
-        
-        <article>
-            <h2>Dina planterade planteringar</h2>
-            <div class="card">
-                <figure>
-                    <img src="./assets/images/9.jpeg" alt="gurka">
-                </figure>
-                <div class="card__body">
-                    <h3>Gurka</h3>
-                    <p>15 april 2024</p>
-                    <p>Rico Coolio</p>
-                    <button>TA BORT</button>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="./assets/images/9.jpeg" alt="gurka">
-                </figure>
-                <div class="card__body">
-                    <h3>Gurka</h3>
-                    <p>15 april 2024</p>
-                    <p>Rico Coolio</p>
-                    <button>TA BORT</button>
-                </div>
-            </div>
-
-        </article>
-
-        <footer>
-            <figure>
-                <img src="./assets/images/footer1.jpeg" alt="en tjej som plocka frukt">
-                <img src="./assets/images/footer3.jpeg" alt="vattna planter">
-                <img src="./assets/images/footer2.jpeg" alt="morrot">
-                <img src="./assets/images/footer4.jpeg" alt="trä">
-            </figure>
-        </footer>
-        <div class="back-to-top">
-            <button><a href="">Till toppen av sidan</a></button>
+            <input type="text" />
           </div>
+          <div class="form__inputs__datum">
+            <label>Datum:</label>
+            <input type="text" />
+          </div>
+        </div>
+        <button>LÄGG TILL</button>
+      </form>
+
+      <section class="planerade">
+        <h2>Dina planerade planteringar:</h2>
+        <div class="card">
+          <figure>
+            <img src="./assets/images/9.jpeg" alt="gurka" />
+          </figure>
+          <div class="card__body">
+            <h3>Gurka</h3>
+            <p>15 april 2024</p>
+            <p>Rico Coolio</p>
+            <button>TA BORT</button>
+            <span class="material-symbols-outlined"> delete </span>
+          </div>
+        </div>
+      </section>
+
+      <article>
+        <h2>Dina planterade planteringar</h2>
+        <div class="cards">
+          <div class="card">
+            <figure>
+              <img src="./assets/images/9.jpeg" alt="gurka" />
+            </figure>
+            <div class="card__body">
+              <h3>Gurka</h3>
+              <p>15 april 2024</p>
+              <p>Rico Coolio</p>
+              <button>TA BORT</button>
+              <span class="material-symbols-outlined"> delete </span>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="./assets/images/9.jpeg" alt="gurka" />
+            </figure>
+            <div class="card__body">
+              <h3>Gurka</h3>
+              <p>15 april 2024</p>
+              <p>Rico Coolio</p>
+              <button>TA BORT</button>
+              <span class="material-symbols-outlined"> delete </span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <footer>
+        <figure>
+          <img
+            src="./assets/images/footer1.jpeg"
+            alt="en tjej som plocka frukt"
+          />
+          <img src="./assets/images/footer3.jpeg" alt="vattna planter" />
+          <img src="./assets/images/footer2.jpeg" alt="morrot" />
+          <img src="./assets/images/footer4.jpeg" alt="trä" />
+        </figure>
+      </footer>
+      <div class="back-to-top">
+        <button><a href="">Till toppen av sidan</a></button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
