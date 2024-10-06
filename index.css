@@ -146,10 +146,23 @@ article {
     .card {
       box-shadow: 5px 5px 10px 10px lightgray;
       .card__image {
-        img {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        img:nth-child(1) {
+          grid-column: 1;
+          grid-row: 1;
           width: 100%;
           height: 300px;
           object-fit: cover;
+        }
+        img:nth-child(2) {
+          grid-column: 1;
+          grid-row: 1;
+          width: 70%;
+          height: 70%;
+          justify-self: center;
+          align-self: center;
         }
       }
       .card__body {
@@ -178,8 +191,9 @@ article {
           align-self: center;
           padding: 0.4rem 0.8rem;
           border-radius: 0.5rem;
+          font-size: 0.8rem;
         }
-        span{
+        span {
           display: none;
         }
       }
@@ -222,7 +236,6 @@ section {
       padding: 1rem 2rem;
       border-radius: 0.5rem;
     }
-    
   }
   .information__image {
     background-color: #0a846e;
@@ -373,10 +386,9 @@ footer {
         align-self: center;
         margin-top: 20px;
       }
-
     }
-    figure{
-    width: 300px;
+    figure {
+      width: 300px;
     }
   }
 
@@ -386,19 +398,19 @@ footer {
       .card {
         .card__body {
           padding: 0 0.5rem;
-          h3{
-            font-size: .9rem;
+          h3 {
+            font-size: 0.9rem;
           }
-          p:nth-child(2){
-            font-size: .7rem;
+          p:nth-child(2) {
+            font-size: 0.7rem;
           }
-          p:nth-child(3){
-            font-size: .7rem;
+          p:nth-child(3) {
+            font-size: 0.7rem;
           }
           button {
             display: none;
           }
-          span{
+          span {
             display: block;
             position: relative;
             right: -70px;
@@ -409,19 +421,17 @@ footer {
       }
     }
   }
-  section{
+  section {
     gap: 0;
     margin: 10rem 0;
-    
-    
   }
-  footer{
+  footer {
     flex-direction: column;
-    .footer__info{
+    .footer__info {
       width: 100%;
       height: 50%;
     }
-    .footer__image{
+    .footer__image {
       width: 100%;
       height: 50%;
     }

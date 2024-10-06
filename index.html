@@ -9,8 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        
+      <header class="header"> 
         <figure>
           <img
             src="./assets/images/1.jpeg"
@@ -28,17 +27,18 @@
         </figure>
       </header>
 
-      <nav>
+      <nav class="nav">
         <ul class="nav__list">
-          <li><a href="#">PLANER</a></li>
-          <li><a href="#">HISTORIK</a></li>
-          <li><a href="#">TIPS</a></li>
-          <li><a href="#">LOGGA IN</a></li>
+          <li class="nav__list__items"><a href="#">PLANER</a></li>
+          <li class="nav__list__items"><a href="#">HISTORIK</a></li>
+          <li class="nav__list__items"><a href="#">TIPS</a></li>
+          <li class="nav__list__items"><a href="#">LOGGA IN</a></li>
         </ul>
       </nav>
 
-      <main>
-        <h1>PLANNED PLANTHOOD</h1>
+      <main class="main">
+
+        <h1 class="main__title">PLANNED PLANTHOOD</h1>
         <figure>
           <img src="./assets/Vectorseedpackage.svg" alt="seedpackage" />
         </figure>
@@ -54,12 +54,15 @@
         
       </main>
 
-      <article>
-        <h2>Våra planerade planteringar:</h2>
-        <div class="cards">
-          <div class="card">
+      <article class="planer">
+
+        <h2 class="planer__title">Våra planerade planteringar:</h2>
+
+        <div class="planer__cards cards">
+          <div class="planer_cards_card card">
             <figure class="card__image">
               <img src="./assets/images/9.jpeg" alt="gurka" />
+              <img src="./assets/plant.svg" alt="">
             </figure>
             <div class="card__body">
               <h3>Gurka</h3>
@@ -71,9 +74,10 @@
                 </span>
             </div>
           </div>
-          <div class="card">
+          <div class="planer__cards_card card">
             <figure class="card__image">
               <img src="./assets/images/10.jpeg" alt="Tomat" />
+              <img src="./assets/plant.svg" alt="">
             </figure>
             <div class="card__body">
               <h3>Tomat</h3>
@@ -85,9 +89,10 @@
                 </span>
             </div>
           </div>
-          <div class="card">
+          <div class="planer__cards_card card">
             <figure class="card__image">
               <img src="./assets/images/11.jpeg" alt="Tomat" />
+              <img src="./assets/plant.svg" alt="">
             </figure>
             <div class="card__body">
               <h3>Tomat</h3>
@@ -99,9 +104,10 @@
                 </span>
             </div>
           </div>
-          <div class="card">
+          <div class="planer__cards_card card">
             <figure class="card__image">
               <img src="./assets/images/2.jpeg" alt="Sockerärtor" />
+              <img src="./assets/plant.svg" alt="">
             </figure>
             <div class="card__body">
               <h3>Sockerärtor</h3>
@@ -113,9 +119,10 @@
                 </span>
             </div>
           </div>
-          <div class="card">
+          <div class="planer__cards_card card">
             <figure class="card__image">
               <img src="./assets/images/6.jpeg" alt="Majrova" />
+              <img src="./assets/plant.svg" alt="">
             </figure>
             <div class="card__body">
               <h3>Sockerärtor</h3>
@@ -127,9 +134,10 @@
                 </span>
             </div>
           </div>
-          <div class="card">
+          <div class="planer__cards_card card">
             <figure class="card__image">
               <img src="./assets/images/4.jpeg" alt="Squash" />
+              <img src="./assets/plant.svg" alt="">
             </figure>
             <div class="card__body">
               <h3>Sockerärtor</h3>
@@ -142,7 +150,9 @@
             </div>
           </div>
         </div>
-        <button>Visa fler</button>
+
+        <button class="planer__button">Visa fler</button>
+
       </article>
 
       <section class="information">
